@@ -2644,7 +2644,13 @@ FourB.find().sort({'annual.total':"desc"}).exec(function(err, docs) {
     }
 
 });
-app.listen(3000,function(){
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+
+app.listen(port,function(){
     console.log("Successfully connected to port 3000");
 
 });
@@ -2652,147 +2658,3 @@ app.listen(3000,function(){
 
 
 
-// const stud1 = new OneA({
-
-//     name: "Yuvasree",
-//     regNo: 1,
-//     quaterly:
-//     {
-//         maths: 100,
-//         science: 100,
-//         social: 100,
-//         english: 100,
-//         language: 100,
-//         total:  500,
-        
-//     },
-//     halfyearly:
-//     {
-//         maths: 99,
-//         science: 99,
-//         social: 100,
-//         english: 100,
-//         language: 100,
-//         total:  498,
-       
-//     },
-//     annual:
-//     {
-//         maths: 100,
-//         science: 100,
-//         social: 100,
-//         english: 100,
-//         language: 100,
-//         total:  500,
-        
-//     }
-
-
-// });
-
-// const stud2 = new OneA({
-
-//     name: "Haritha",
-//     regNo: 2,
-//     quaterly:
-//     {
-//         maths: 99,
-//         science: 99,
-//         social: 100,
-//         english: 100,
-//         language: 100,
-//         total:  498,
-        
-//     },
-//     halfyearly:
-//     {
-//         maths: 99,
-//         science: 99,
-//         social: 99,
-//         english: 99,
-//         language: 99,
-//         total: 495
-       
-//     },
-//     annual:
-//     {
-//         maths: 99,
-//         science: 99,
-//         social: 100,
-//         english: 100,
-//         language: 100,
-//         total:  498,
-        
-//     }
-
-
-// });
-
-// const stud3 = new OneA({
-
-//     name: "Vaish",
-//     regNo: 3,
-//     quaterly:
-//     {
-//         maths: 99,
-//         science: 99,
-//         social: 99,
-//         english: 100,
-//         language: 100,
-//         total:  497,
-        
-//     },
-//     halfyearly:
-//     {
-//         maths: 99,
-//         science: 100,
-//         social: 100,
-//         english: 100,
-//         language: 100,
-//         total:  499,
-       
-//     },
-//     annual:
-//     {
-//         maths: 99,
-//         science: 99,
-//         social: 98,
-//         english: 100,
-//         language: 100,
-//         total:  496,
-        
-//     }
-
-
-// });
-
-
-// var count = 1;
-// OneA.find().sort({'halfyearly.total':"desc"}).exec(function(err, docs) {
-//     if(err)
-//     {
-//         console.log(err);
-//     }
-//     else
-//     {
-//         docs.forEach(function(i)
-//          {
-//              if(i.name!=="Haritha")
-//              {
-//                 i.halfyearly.rank=count;
-//                 count=count+1;
-
-//              }
-//              else
-//              {
-//                 i.halfyearly.rank=count;
-//                 console.log(i.halfyearly.rank);
-
-//              }
-           
-            
-//          })
-         
-       
-//     }
-//  });
