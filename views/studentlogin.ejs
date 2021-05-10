@@ -1,0 +1,44 @@
+<%- include("header") -%>
+<div class="teacherLogin">
+    <h1>Welcome back! Login to get your virtual report card</h1>
+    <form action="/studentlogin" method="POST">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Name</label>
+          <input type="text" name="StudentName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name" required>
+          
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Register Number</label>
+          <input type="text" name="StudentReg" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Class</label>
+            <select class="form-control" id="exampleFormControlSelect1" name="selectClass">
+              <option  value="1">1 A</option>
+              <option  value="2">1 B</option>
+              <option  value="3">2 A</option>
+              <option  value="4">2 B</option>
+              <option  value="5">3 A</option>
+              <option  value="6">3 B</option>
+              <option  value="7">4 A</option>
+              <option  value="8">4 B</option>
+            </select>
+          </div><br>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Example select</label>
+            <select class="form-control" id="exampleFormControlSelect1" name="selectExam">
+              <option name="quaterly" value="1">Quaterly Exam</option>
+              <option name="halfyearly" value="2">Halfyearly Exam</option>
+              <option name="annual" value="3">Annual Exam</option>
+            </select>
+          </div><br>
+    
+        <button type="submit" class="btn btn-secondary">Get Report Card</button>
+      </form>
+
+</div>
+<%- include("footer") -%>

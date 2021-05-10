@@ -1,0 +1,94 @@
+body
+{
+    background-color: #dfbc9f;
+    font-family:'Times New Roman', Times, serif ;                   ;
+    font-weight:bolder;
+}
+#navbarText
+{
+    margin-left: 60%;
+}
+.foot
+{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: #5c5454;
+    color:white;
+    text-align: center;
+}
+.selection
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 10% 10%;
+    
+    text-align: center;
+}
+.btn-block
+{
+    padding:1% 20%;
+}
+
+.adminLogin
+{
+    text-align: center;
+    padding:10% 0% 0% 0%;
+}
+.adminLogin .form-group
+{
+    margin:0% 30%;
+}
+.adminSelect
+{
+    text-align: center;
+    padding:10% 0% 0% 0%;
+}
+.adminSelect .btn{
+    padding: 2% 15%;
+
+}
+.addTeacher h1
+{
+    text-align: center;
+}
+.addTeacher
+{
+    margin:5% 20%;
+}
+.addStudent
+{
+    text-align: center;
+    padding: 6% 0% 0% 0%;
+}
+.addStudent .btn{
+    width:20%;
+    margin:2% 5%;
+    font-weight:bolder;
+
+}
+.StudentDetails h1
+{
+    text-align: center;
+}
+
+.StudentDetails
+{
+    margin:5% 20%;
+}
+.teacherLogin h1
+{
+    text-align: center;
+}
+.teacherLogin
+{
+    margin: 7% 30%;
+}
+.report h1{
+    text-align: center;
+}
+.report{
+    margin:5% 20%;
+}

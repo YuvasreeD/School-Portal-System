@@ -1,0 +1,21 @@
+<%- include("header") -%>
+<div class="teacherLogin">
+    <h1>Welcome back !</h1>
+    <form action="/teacherlogin" method="POST">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" name="teacherEmail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+          
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" name="teacherPasswrd" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+        </div>
+        <br>
+    
+        <button type="submit" class="btn btn-secondary">Login</button>
+      </form>
+
+</div>
+<%- include("footer") -%>

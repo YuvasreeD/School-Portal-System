@@ -1,0 +1,64 @@
+<%- include("header") -%>
+<div class="teacherLogin">
+    <h1><%= title%></h1>
+    <form action="/<%= title%>" method="POST">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Name</label>
+            <input type="text" name="nameS" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name" required>
+            
+          </div><br>
+        
+          <div class="form-group">
+            <label for="exampleInputEmail1">Register Number</label>
+            <input type="text" name="regS" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Register Number" required>
+            
+          </div><br>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Example select</label>
+            <select class="form-control" id="exampleFormControlSelect1" name="select">
+              <option name="quaterly" value="1">Quaterly Exam</option>
+              <option name="halfyearly" value="2">Halfyearly Exam</option>
+              <option name="annual" value="3">Annual Exam</option>
+            </select>
+          </div><br>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Marks in Maths</label>
+            <input type="number" name="maths" id="quantity" min="1" max="100" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  required>
+            
+          </div><br>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Marks in Science</label>
+            <input type="number" id="quantity" min="1" max="100" name="science" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  required>
+            
+          </div><br>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Marks in Social</label>
+            <input type="number" name="social" id="quantity"  min="1" max="100" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  required>
+            
+          </div><br>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Marks in English</label>
+            <input type="number" name="english" id="quantity" min="1" max="100" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  required>
+            
+          </div><br>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Marks in Language</label>
+            <input type="number" name="language" id="quantity"  min="1" max="100" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  required>
+            
+          </div><br>
+
+          <button type="submit" class="btn btn-secondary">Submit</button>
+        
+    
+    </form>
+
+</div>
+
+
+<%- include("footer") -%>

@@ -1,0 +1,26 @@
+<%- include("header") -%>
+<div class="StudentDetails">
+    <h1>Class: <%= title %></h1>
+    <form action="/StudentDetails" method="POST">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Name</label>
+            <input type="text" name="nameS" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name" required>
+            
+          </div><br>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Register Number</label>
+            <input type="text" name="regS" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Register Number" required>
+            
+          </div><br>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" name="emailS" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+          
+        </div><br>
+
+        <button type="submit" class="btn btn-secondary" name="class" value="<%= title %>">Add</button>
+      </form>
+</div>
+<%- include("footer") -%>
